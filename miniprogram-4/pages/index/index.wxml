@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="header">
+    <text class="title">录音分析</text>
+  </view>
+  
+  <view class="record-section">
+    <view class="record-button {{isRecording ? 'recording' : ''}}" bindtap="toggleRecording">
+      <view class="record-inner"></view>
+    </view>
+    <text class="record-hint">{{recordHint}}</text>
+    <text class="recording-time" wx:if="{{isRecording}}">{{recordingTime}}秒</text>
+  </view>
+  
+  <view class="result-section" wx:if="{{showResult}}">
+    <view class="result-card">
+      <view class="card-header">
+        <text class="card-title">分析结果</text>
+      </view>
+      <view class="card-content">
+        <text class="content-text">识别到客户王总，需求是教育金规划，意愿程度较高。</text>
+      </view>
+      <button class="confirm-btn" bindtap="goToConfirm">确认信息</button>
+    </view>
+  </view>
+</view>

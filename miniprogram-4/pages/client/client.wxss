@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f7fa;
+    padding: 30rpx;
+  }
+  
+  .header {
+    margin-bottom: 30rpx;
+  }
+  
+  .title {
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .search-bar {
+    margin-bottom: 30rpx;
+  }
+  
+  .search-input-wrap {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10rpx;
+    padding: 15rpx 20rpx;
+    box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.05);
+  }
+  
+  .search-icon {
+    font-size: 32rpx;
+    margin-right: 15rpx;
+    color: #999;
+  }
+  
+  .search-input {
+    flex: 1;
+    height: 40rpx;
+    font-size: 28rpx;
+  }
+  
+  .client-list {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .client-card {
+    background-color: white;
+    border-radius: 16rpx;
+    padding: 30rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  }
+  
+  .client-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .client-name {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10rpx;
+  }
+  
+  .client-company {
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 10rpx;
+  }
+  
+  .client-need {
+    font-size: 26rpx;
+    color: #666;
+  }
+  
+  .client-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .last-contact {
+    font-size: 24rpx;
+    color: #999;
+    margin-bottom: 10rpx;
+  }
+  
+  .stage-tag {
+    font-size: 24rpx;
+    padding: 4rpx 12rpx;
+    border-radius: 10rpx;
+  }
+  
+  .stage-initial {
+    background-color: #EBF5FF;
+    color: #3B82F6;
+  }
+  
+  .stage-followup {
+    background-color: #FEF3C7;
+    color: #D97706;
+  }
+  
+  .stage-deal {
+    background-color: #DEF7EC;
+    color: #057A55;
+  }
+  
+  .add-btn {
+    position: fixed;
+    right: 40rpx;
+    bottom: 40rpx;
+    width: 100rpx;
+    height: 100rpx;
+    background-color: #3B82F6;
+    border-radius: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4rpx 12rpx rgba(59,130,246,0.3);
+  }
+  
+  .add-icon {
+    color: white;
+    font-size: 50rpx;
+    font-weight: bold;
+  }

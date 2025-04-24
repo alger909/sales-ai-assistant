@@ -1,0 +1,72 @@
+<view class="container">
+  <!-- 顶部导航 -->
+  <view class="custom-header">
+    <view class="header-left">
+      <view class="back-btn" bindtap="goBack">
+        <text class="back-icon">←</text>
+      </view>
+      <text class="header-title">AI教练对话</text>
+    </view>
+  </view>
+
+  <!-- 消息列表 -->
+  <scroll-view scroll-y class="message-list" id="message-container">
+    <block wx:for="{{messages}}" wx:key="index">
+      <!-- 系统消息 -->
+      <block wx:if="{{item.type === 'system'}}">
+        <view class="system-message">
+          <text>{{item.content}}</text>
+        </view>
+      </block>
+      
+      <!-- AI消息 -->
+      <block wx:elif="{{item.type === 'ai'}}">
+        <view class="message ai-message">
+          <view class="avatar">
+            <text class="avatar-text">AI</text>
+          </view>
+          <view class="message-content">
+            <text class="message-text">{{item.content}}</text>
+            <view class="message-actions" wx:if="{{index === messages.length - 1 && showActions}}">
+              <view class="action-btn like-btn" bindtap="likeResponse">
+                <text class="action-icon">👍</text>
+                <text class="action-text">有帮助</text>
+              </view>
+              <view class="action-btn dislike-btn" bindtap="dislikeResponse">
+                <text class="action-icon">👎</text>
+                <text class="action-text">不满意</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      
+      <!-- 用户消息 -->
+      <block wx:elif="{{item.type === 'user'}}">
+        <view class="message user-message">
+          <view class="message-content">
+            <text class="message-text">{{item.content}}</text>
+          </view>
+          <view class="avatar">
+            <text class="avatar-text">我</text>
+          </view>
+        </view>
+      </block>
+    </block>
+  </scroll-view>
+
+  <!-- 输入区 -->
+  <view class="input-area">
+    <view class="input-box">
+      <input class="message-input" 
+             placeholder="输入您的销售话术..." 
+             value="{{inputValue}}"
+             bindinput="inputChange" 
+             confirm-type="send"
+             bindconfirm="sendMessage"/>
+      <view class="send-btn" bindtap="sendMessage">
+        <text class="send-icon">↑</text>
+      </view>
+    </view>
+  </view>
+</view>

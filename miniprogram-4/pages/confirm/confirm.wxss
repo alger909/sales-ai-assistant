@@ -1,0 +1,166 @@
+.container {
+    padding: 30rpx;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  .custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30rpx;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-btn {
+    padding: 10rpx;
+  }
+  
+  .back-icon {
+    font-size: 40rpx;
+    color: #333;
+  }
+  
+  .header-title {
+    font-size: 34rpx;
+    font-weight: bold;
+    margin-left: 10rpx;
+  }
+  
+  .save-btn {
+    color: #3B82F6;
+    font-size: 30rpx;
+  }
+  
+  .voice-result {
+    background-color: white;
+    padding: 20rpx;
+    border-radius: 16rpx;
+    margin-bottom: 30rpx;
+  }
+  
+  .voice-label {
+    font-size: 28rpx;
+    color: #666;
+    display: block;
+    margin-bottom: 10rpx;
+  }
+  
+  .voice-content {
+    font-size: 28rpx;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .info-card {
+    background-color: white;
+    border-radius: 16rpx;
+    padding: 30rpx;
+    margin-bottom: 30rpx;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+  }
+  
+  .card-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .edit-btn, .ai-tag {
+    font-size: 24rpx;
+  }
+  
+  .edit-icon {
+    font-size: 32rpx;
+    color: #999;
+  }
+  
+  .ai-tag {
+    background-color: #EBF5FF;
+    color: #3B82F6;
+    padding: 4rpx 12rpx;
+    border-radius: 10rpx;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16rpx;
+  }
+  
+  .item-label {
+    width: 160rpx;
+    font-size: 28rpx;
+    color: #666;
+  }
+  
+  .item-value {
+    font-size: 28rpx;
+    color: #333;
+    flex: 1;
+  }
+  
+  .stars {
+    display: flex;
+  }
+  
+  .star {
+    font-size: 32rpx;
+    color: #ddd;
+    margin-right: 8rpx;
+  }
+  
+  .star-active {
+    color: #FFB800;
+  }
+  
+  .insight-content {
+    font-size: 28rpx;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20rpx;
+    display: block;
+  }
+  
+  .insight-list {
+    margin-top: 16rpx;
+  }
+  
+  .insight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12rpx;
+  }
+  
+  .check-icon {
+    font-size: 28rpx;
+    color: #3B82F6;
+    margin-right: 10rpx;
+  }
+  
+  .insight-text {
+    font-size: 28rpx;
+    color: #333;
+  }
+  
+  .bottom-button {
+    margin-top: 40rpx;
+    padding-bottom: 40rpx;
+  }
+  
+  .coaching-btn {
+    background-color: #3B82F6;
+    color: white;
+    border-radius: 10rpx;
+    font-size: 32rpx;
+  }

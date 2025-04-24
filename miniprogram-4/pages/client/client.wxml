@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="header">
+    <text class="title">客户管理</text>
+  </view>
+  
+  <view class="search-bar">
+    <view class="search-input-wrap">
+      <text class="search-icon">🔍</text>
+      <input type="text" 
+             class="search-input" 
+             placeholder="搜索客户姓名或公司" 
+             value="{{searchValue}}"
+             bindinput="searchInput"/>
+    </view>
+  </view>
+  
+  <view class="client-list">
+    <block wx:for="{{clients}}" wx:key="id">
+      <view class="client-card" bindtap="viewClientDetail" data-id="{{item.id}}">
+        <view class="client-info">
+          <view class="client-name">{{item.name}}</view>
+          <view class="client-company">{{item.company}}</view>
+          <view class="client-need">需求：{{item.need}}</view>
+        </view>
+        <view class="client-status">
+          <text class="last-contact">{{item.lastContact}}</text>
+          <text class="stage-tag {{item.stage === '初步接触' ? 'stage-initial' : (item.stage === '跟进中' ? 'stage-followup' : 'stage-deal')}}">
+            {{item.stage}}
+          </text>
+        </view>
+      </view>
+    </block>
+  </view>
+  
+  <view class="add-btn" bindtap="addNewClient">
+    <text class="add-icon">+</text>
+  </view>
+</view>

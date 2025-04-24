@@ -1,0 +1,110 @@
+<view class="container">
+  <!-- 顶部导航 -->
+  <view class="custom-header">
+    <view class="header-left">
+      <view class="back-btn" bindtap="goBack">
+        <text class="back-icon">←</text>
+      </view>
+      <text class="header-title">确认客户信息</text>
+    </view>
+    <view class="save-btn" bindtap="saveInfo">保存</view>
+  </view>
+
+  <!-- 语音识别结果 -->
+  <view class="voice-result">
+    <text class="voice-label">原始录音内容：</text>
+    <text class="voice-content">"今天见了一个客户王总，40多岁，做互联网公司的，有两个孩子，大的上高中，小的上初中，他最近在考虑给孩子规划教育金..."</text>
+  </view>
+
+  <!-- 基本信息 -->
+  <view class="info-card">
+    <view class="card-header">
+      <text class="card-title">基本信息</text>
+      <view class="edit-btn">
+        <text class="edit-icon">✎</text>
+      </view>
+    </view>
+    <view class="info-item">
+      <text class="item-label">姓名：</text>
+      <text class="item-value">{{clientInfo.name}}</text>
+    </view>
+    <view class="info-item">
+      <text class="item-label">年龄：</text>
+      <text class="item-value">{{clientInfo.age}}</text>
+    </view>
+    <view class="info-item">
+      <text class="item-label">职业：</text>
+      <text class="item-value">{{clientInfo.job}}</text>
+    </view>
+  </view>
+
+  <!-- 家庭情况 -->
+  <view class="info-card">
+    <view class="card-header">
+      <text class="card-title">家庭情况</text>
+      <view class="edit-btn">
+        <text class="edit-icon">✎</text>
+      </view>
+    </view>
+    <view class="info-item">
+      <text class="item-label">孩子数量：</text>
+      <text class="item-value">{{clientInfo.children}}</text>
+    </view>
+    <view class="info-item">
+      <text class="item-label">孩子情况：</text>
+      <text class="item-value">{{clientInfo.childrenInfo}}</text>
+    </view>
+  </view>
+
+  <!-- 需求信息 -->
+  <view class="info-card">
+    <view class="card-header">
+      <text class="card-title">需求信息</text>
+      <view class="edit-btn">
+        <text class="edit-icon">✎</text>
+      </view>
+    </view>
+    <view class="info-item">
+      <text class="item-label">核心需求：</text>
+      <text class="item-value">{{clientInfo.need}}</text>
+    </view>
+    <view class="info-item">
+      <text class="item-label">意愿程度：</text>
+      <view class="stars">
+        <block wx:for="{{5}}" wx:key="index">
+          <text class="star {{index < clientInfo.intention ? 'star-active' : ''}}">★</text>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <!-- AI洞察 -->
+  <view class="info-card">
+    <view class="card-header">
+      <text class="card-title">AI洞察</text>
+      <view class="ai-tag">AI生成</view>
+    </view>
+    <text class="insight-content">
+      客户王总是高净值人群，对孩子教育非常重视。两个孩子分别处于高中和初中阶段，教育支出压力大，未来可能考虑国内顶尖大学或出国留学。建议关注以下方面：
+    </text>
+    <view class="insight-list">
+      <view class="insight-item">
+        <text class="check-icon">✓</text>
+        <text class="insight-text">短期教育金规划（1-3年）</text>
+      </view>
+      <view class="insight-item">
+        <text class="check-icon">✓</text>
+        <text class="insight-text">中长期留学/高等教育资金准备</text>
+      </view>
+      <view class="insight-item">
+        <text class="check-icon">✓</text>
+        <text class="insight-text">家庭整体财务保障</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="bottom-button">
+    <button class="coaching-btn" bindtap="startCoaching">开始AI教练对话</button>
+  </view>
+</view>

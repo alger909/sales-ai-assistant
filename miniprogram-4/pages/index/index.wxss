@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f7fa;
+    padding: 30rpx;
+  }
+  
+  .header {
+    margin-bottom: 60rpx;
+  }
+  
+  .title {
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .record-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80rpx 0;
+  }
+  
+  .record-button {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 80rpx;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+  }
+  
+  .record-inner {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #3B82F6;
+  }
+  
+  .recording .record-inner {
+    background-color: #ef4444;
+  }
+  
+  .record-hint {
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 10rpx;
+  }
+  
+  .recording-time {
+    font-size: 24rpx;
+    color: #999;
+  }
+  
+  .result-section {
+    margin-top: 40rpx;
+  }
+  
+  .result-card {
+    background-color: white;
+    border-radius: 16rpx;
+    padding: 30rpx;
+    box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  }
+  
+  .card-header {
+    margin-bottom: 20rpx;
+  }
+  
+  .card-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-content {
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #eee;
+    margin-bottom: 30rpx;
+  }
+  
+  .content-text {
+    font-size: 28rpx;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .confirm-btn {
+    background-color: #3B82F6;
+    color: white;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+  }

@@ -1,0 +1,36 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/confirm/confirm",
+      "pages/coaching/coaching",
+      "pages/client/client",
+      "pages/tasks/tasks"
+    ],
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "销售AI助手",
+      "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+      "color": "#999999",
+      "selectedColor": "#3B82F6",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "录入"
+        },
+        {
+          "pagePath": "pages/client/client",
+          "text": "客户"
+        },
+        {
+          "pagePath": "pages/tasks/tasks",
+          "text": "任务"
+        }
+      ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+  }
